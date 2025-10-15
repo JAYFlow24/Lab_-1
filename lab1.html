@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Лабораторна робота №1 — Крамар Тимофій</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #00cfff, #6a00f2);
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      text-shadow: 0 0 5px #fff;
+    }
+
+    nav {
+      background-color: rgba(255, 255, 255, 0.1);
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 20px;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #fff;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .box {
+      flex: 1 1 400px;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+
+    .box h2 {
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      text-shadow: 0 0 3px #00cfff;
+    }
+
+    .box ul, .box ol {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .tech-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .tech-list li {
+  margin-bottom: 12px;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.2s ease;
+  padding-left: 20px; /* ⬅️ додає відступ зліва */
+}
+
+    
+
+    .tech-list li i {
+      font-size: 1.3em;
+      color: #00cfff;
+      min-width: 25px;
+    }
+
+    .tech-list li:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>Лабораторна робота №1</div>
+    <div style="font-size: 1.2em; margin-top: 10px;">Предмет: <strong>Прикладна інформатика</strong></div>
+    <div style="font-size: 1.1em; margin-top: 5px;">Викладач: <strong>Безкоровайний В. С.</strong></div>
+</header>
+
+  <nav>
+    <a href="index.html">Про мене</a>
+    <a href="lab1.html">Лабораторна робота №1</a>
+    <a href="about.html">Предмет</a>
+  </nav>
+
+  <div class="box">
+  <h2>🎯 Мета роботи</h2>
+  <p>
+    Набуття теоретичних знань і практичних навичок у сфері мережевих технологій, комп’ютерної безпеки та веб-розробки. 
+    Формування вміння створювати сучасні веб-сайти з урахуванням принципів адаптивного дизайну, ефективної структури та захисту інформації. 
+    Ознайомлення з основами роботи Web-серверів та застосуванням HTML та CSS3
+  </p>
+</div>
+
+    <div class="box">
+  <h2>📝 Завдання</h2>
+  <ol>
+    <li>Ознайомитися з поняттям мережевих технологій та їх роллю в економіці й бізнесі</li>
+    <li>Вивчити основи комп’ютерної безпеки та захисту інформації</li>
+    <li>Проаналізувати структуру сучасних Web-серверів (Apache, Nginx, IIS тощо)</li>
+    <li>Розробити персональну веб-сторінку (візитку) з використанням HTML та CSS</li>
+    <li>Забезпечити адаптивність сайту для різних пристроїв</li>
+    <li>Додати інтерактивні елементи за допомогою JavaScript</li>
+    <li>Оформити структуру сайту згідно з принципами UI/UX</li>
+    <li>Підготувати презентацію створеного сайту та пояснити вибрані технології</li>
+  </ol>
+</div>
+
+
+    <div class="box">
+      <h2>🛠️ Використані технології</h2>
+      <ul class="tech-list">
+        <li><i class="fab fa-html5"></i> HTML5 — семантична розмітка</li>
+        <li><i class="fab fa-css3-alt"></i> CSS3 — стилізація та адаптивність</li>
+        <li><i class="fas fa-layer-group"></i> Flexbox & Grid — компонування блоків</li>
+        <li><i class="fas fa-font"></i> Google Fonts — сучасні шрифти</li>
+        <li><i class="fas fa-mobile-alt"></i> Media Queries — адаптація під пристрої</li>
+        <li><i class="fab fa-git-alt"></i> Git & GitHub — контроль версій</li>
+        <li><i class="fas fa-code"></i> VS Code — середовище розробки</li>
+        <li><i class="fab fa-figma"></i> Figma — дизайн та прототипування</li>
+        <li><i class="fas fa-tools"></i> DevTools — налагодження та тестування</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>© 2025 Крамар Тимофій — Студент КНЕУ</footer>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Крамар Тимофій мій сайт</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #6a00f2, #00cfff);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      padding: 40px;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .photo {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
+    .photo img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border: 5px solid #fff;
+      box-shadow: 0 0 20px #fff;
+    }
+
+    .caption {
+      margin-top: 15px;
+      font-size: 1.4em;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 0 0 5px #00cfff;
+    }
+
+    .subcaption {
+      margin-top: 5px;
+      font-size: 1.1em;
+      font-style: italic;
+      color: #e0e0e0;
+      text-shadow: 0 0 3px #00cfff;
+    }
+
+    .info {
+      flex: 2 1 400px;
+      padding: 20px;
+    }
+
+    .info h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .info p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      background-color: #fff;
+      color: #333;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .buttons a:hover {
+      background-color: #333;
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        height: auto;
+        padding: 20px;
+      }
+
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .info {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="photo">
+      <img src="IMG_Kramar.jpg" alt="Фото Тимофія">
+      <h2 class="caption">Крамар Тимофій</h2>
+      <div class="subcaption">студент КНЕУ</div>
+    </div>
+    <div class="info">
+      <h1>Автобіографія</h1>
+      <p>
+             Я Крамар Тимофій. Мені 17 років. Живу в місті Київа.
+             
+             Я студент Київського національного економічного університет імені Вадима Гетьмана(КНЕУ). 
+             
+             Починаючий веб-розробник. Постійно вдосконалюю свої навички, працюю з HTML та CSS роблю з сучасними фреймворками.
+             
+             Моя мета — створювати зручні, естетичні та ефективні вебрішення для людей.
+      </p>
+      <div class="buttons">
+        <a href="index.html">Про мене</a>
+        <a href="lab1.html">Лабораторна робота №1</a>
+        <a href="about.html">Предмет</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
